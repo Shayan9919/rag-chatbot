@@ -1,0 +1,3 @@
+RAG Chatbot (Annoy)
+
+This is a simple retrieval augmented generation chatbot. It ingests a small text corpus, builds a vector index, retrieves the most relevant chunks then generates answers with a local model (DistilGPT-2). I originally prototyped this with FAISS on Google Colab, where it worked fine, but on my local machine FAISS kept crashing due to compatibility issues with Python/OS builds. To keep it lightweight and reproducible, I switched to Annoy which avoids those binary problems while still demonstrating the full RAG workflow.
